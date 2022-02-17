@@ -1,12 +1,19 @@
+@use "../../colors";
+
 .container{
   width: 40px;
   height: 40px;
-  background-color: #fff;
-  color: #747474;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  &.changeable:hover{
+    filter: brightness(90%);
+  }
 }
 .text{
-  background-color: #E0E0E0;
+  font-size: 24px;
 }
-.true{
-  background-color: #206109;
-}
+
